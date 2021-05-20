@@ -44,6 +44,14 @@
         {
           "emptyLineBefore": "always",
           "properties": [
+            "content",
+            "counter-increment",
+            "counter-reset"
+          ]
+        },
+        {
+          "emptyLineBefore": "always",
+          "properties": [
             "position",
             "top",
             "right",
@@ -58,6 +66,14 @@
             "box-sizing",
             "box-shadow",
             "display",
+            "float",
+            "flex",
+            "flex-basis",
+            "flex-direction",
+            "flex-flow",
+            "flex-grow",
+            "flex-shrink",
+            "flex-wrap",
             "align-content",
             "align-items",
             "align-self",
@@ -71,11 +87,26 @@
         {
           "emptyLineBefore": "always",
           "properties": [
-            "color",
+            "font-family",
             "font",
             "font-size",
+            "font-weight",
+            "font-feature-settings",
+            "font-kerning",
+            "font-size-adjust",
+            "font-stretch",
+            "font-style",
+            "font-synthesis",
+            "font-variant",
+            "font-variant-caps",
+            "font-variant-east-asian",
+            "font-variant-ligatures",
+            "font-variant-numeric",
+            "font-variant-position",
+            "color",
             "line-height",
-            "text-align"
+            "text-align",
+            "direction"
           ]
         },
         {
@@ -142,6 +173,32 @@
             "animation-name",
             "animation-play-state",
             "animation-timing-function"
+          ]
+        },
+        {
+          "emptyLineBefore": "always",
+          "properties": [
+            "caption-side",
+            "columns",
+            "column-count",
+            "column-fill",
+            "column-gap",
+            "column-rule",
+            "column-rule-color",
+            "column-rule-style",
+            "column-rule-width",
+            "column-span",
+            "column-width",
+            "empty-cells",
+            "caret-color",
+            "clear"
+          ]
+        },
+        {
+          "emptyLineBefore": "always",
+          "properties": [
+            "cursor",
+            "filter"
           ]
         },
         {
