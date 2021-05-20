@@ -1,0 +1,33 @@
+.div-wrapper {
+    display: flex;
+    
+    justify-content: space-around;
+    font-size: 30px;
+    background-color: brown;
+    width: 100%;
+    
+}
+
+.first-div {
+    height: 300px;
+    font-size: 10px;
+    width: 100px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: black;
+    display: block;
+}
+
+.second-div{
+    height: 300px;
+    font-size: 10px;
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 300px;
+    background-color: green;
+}
