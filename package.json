@@ -26,8 +26,8 @@
   "lint-staged": {
     "linters": {
       "*.scss": [
-        "npx prettier --write style.scss",
-        "npx stylelint --fix --config ./.stylelintrc-format style.scss",
+        "npx prettier --write",
+        "npx stylelint --fix --config ./.stylelintrc-format",
         "git add"
       ]
     }
