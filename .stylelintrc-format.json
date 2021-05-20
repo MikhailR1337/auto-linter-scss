@@ -56,7 +56,11 @@
           "emptyLineBefore": "always",
           "properties": [
             "box-sizing",
+            "box-shadow",
             "display",
+            "align-content",
+            "align-items",
+            "align-self",
             "float",
             "width",
             "height",
@@ -77,19 +81,74 @@
         {
           "emptyLineBefore": "always",
           "properties": [
+            "background",
             "background-color",
+            "background-attachment",
+            "background-blend-mode",
+            "background-clip",
+            "background-image",
+            "background-repeat",
+            "background-origin",
+            "background-position",
+            "background-size",
             "border",
+            "border-color",
+            "border-bottom",
+            "border-bottom-color",
+            "border-bottom-left-radius",
+            "border-bottom-right-radius",
+            "border-bottom-style",
+            "border-bottom-width",
+            "border-collapse",
             "border-radius",
+            "border-image",
+            "border-image-outset",
+            "border-image-repeat",
+            "border-image-slice",
+            "border-image-source",
+            "border-image-width",
+            "border-left",
+            "border-left-color",
+            "border-left-style",
+            "border-left-width",
+            "border-radius",
+            "border-right",
+            "border-right-color",
+            "border-right-style",
+            "border-right-width",
+            "border-spacing",
+            "border-style",
+            "border-top",
+            "border-top-color",
+            "border-top-left-radius",
+            "border-top-right-radius",
+            "border-top-style",
+            "border-top-width",
+            "border-width",
+            "bottom",
             "opacity"
           ]
         },
         {
           "emptyLineBefore": "always",
-          "properties": ["transition"]
+          "properties": [
+            "transition",
+            "animation",
+            "animation-delay",
+            "animation-direction",
+            "animation-duration",
+            "animation-fill-mode",
+            "animation-iteration-count",
+            "animation-name",
+            "animation-play-state",
+            "animation-timing-function"
+          ]
         },
         {
           "emptyLineBefore": "always",
-          "properties": ["user-select"]
+          "properties": [
+            "user-select"
+          ]
         }
       ],
       {
