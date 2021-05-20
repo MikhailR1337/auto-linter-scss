@@ -1,105 +1,96 @@
 {
-    "extends": [
-        "stylelint-config-recommended",
-        "stylelint-config-prettier"
+  "extends": ["stylelint-config-recommended", "stylelint-config-prettier"],
+  "plugins": ["stylelint-order"],
+  "rules": {
+    "indentation": 4,
+    "rule-empty-line-before": "always",
+    "at-rule-empty-line-before": "always",
+    "property-disallowed-list": ["flex"],
+    "unit-disallowed-list": ["em", "rem"],
+    "order/order": [
+      "declarations",
+      {
+        "type": "at-rule",
+        "name": "media"
+      },
+      {
+        "type": "rule",
+        "selector": "^&::before"
+      },
+      {
+        "type": "rule",
+        "selector": "^&::after"
+      },
+      {
+        "type": "rule",
+        "selector": "^&:\\w"
+      },
+      {
+        "type": "rule",
+        "selector": "^&_"
+      },
+      {
+        "type": "rule",
+        "selector": "^."
+      }
     ],
-    "plugins": [
-      "stylelint-order"
-    ],
-    "rules": {
-      "indentation": 4,
-      "rule-empty-line-before": "always",
-      "at-rule-empty-line-before": "always",
-      "property-disallowed-list": ["flex"],
-      "unit-disallowed-list": ["em", "rem"],
-      "order/order": [
-        "declarations",
+    "order/properties-order": [
+      [
         {
-          "type": "at-rule",
-          "name": "media"
+          "emptyLineBefore": "always",
+          "properties": [
+            "position",
+            "top",
+            "right",
+            "bottom",
+            "left",
+            "z-index"
+          ]
         },
         {
-          "type": "rule",
-          "selector": "^&::before"
+          "emptyLineBefore": "always",
+          "properties": [
+            "box-sizing",
+            "display",
+            "float",
+            "width",
+            "height",
+            "margin",
+            "padding"
+          ]
         },
         {
-          "type": "rule",
-          "selector": "^&::after"
+          "emptyLineBefore": "always",
+          "properties": [
+            "color",
+            "font",
+            "font-size",
+            "line-height",
+            "text-align"
+          ]
         },
         {
-          "type": "rule",
-          "selector": "^&:\\w"
+          "emptyLineBefore": "always",
+          "properties": [
+            "background-color",
+            "border",
+            "border-radius",
+            "opacity"
+          ]
         },
         {
-          "type": "rule",
-          "selector": "^&_"
+          "emptyLineBefore": "always",
+          "properties": ["transition"]
         },
         {
-          "type": "rule",
-          "selector": "^."
+          "emptyLineBefore": "always",
+          "properties": ["user-select"]
         }
       ],
-      "order/properties-order": [
-        [
-          {
-            "emptyLineBefore": "always",
-            "properties": [
-              "position",
-              "top",
-              "right",
-              "bottom",
-              "left",
-              "z-index"
-            ]
-          },
-          {
-            "emptyLineBefore": "always",
-            "properties": [
-              "box-sizing",
-              "display",
-              "float",
-              "width",
-              "height",
-              "margin",
-              "padding"
-            ]
-          },
-          {
-            "emptyLineBefore": "always",
-            "properties": [
-              "color",
-              "font",
-              "font-size",
-              "line-height",
-              "text-align"
-            ]
-          },
-          {
-            "emptyLineBefore": "always",
-            "properties": [
-              "background-color",
-              "border",
-              "border-radius",
-              "opacity"
-            ]
-          },
-          {
-            "emptyLineBefore": "always",
-            "properties": [
-              "transition"
-            ]
-          },
-          {
-            "emptyLineBefore": "always",
-            "properties": [
-              "user-select"
-            ]
-          }
-        ],
-        {
-          "unspecified": "bottom",
-          "emptyLineBeforeUnspecified": "always"
-        }
-      ]
-    }
+      {
+        "unspecified": "bottom",
+        "emptyLineBeforeUnspecified": "always"
+      }
+    ]
   }
+}
