@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prettier": "npx prettier --write *.scss",
+    "stylelint": "npx stylelint --fix *.scss"
   },
   "keywords": [],
   "author": "",
@@ -24,12 +25,10 @@
     }
   },
   "lint-staged": {
-    "linters": {
       "*.scss": [
-        "npx prettier --write style.scss",
-        "npx stylelint --fix style.scss",
+        "npm run prettier",
+        "npm run stylelint",
         "git add"
       ]
-    }
   }
 }
