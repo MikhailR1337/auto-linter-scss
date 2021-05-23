@@ -1,37 +1,50 @@
 .div-wrapper {
-    width: 100%;
-    font-size: 30px;
-    background-color: brown;
+    content: '';
+
     display: flex;
+    width: 100%;
+
+    font-size: 30px;
+
+    background-color: brown;
+
     justify-content: space-around;
-    content: "";
 }
 
-.first-div{
-    content: "";
-    right: 0;
-    display: block;
-    bottom: 0;
-    left: 0;
-    background-color: black;
+.first-div {
+    content: '';
+
     top: 0;
-    height: 300px;
-    font-size: 10px;
+    right: 0;
+    left: 0;
+
+    display: block;
     width: 100px;
     width: auto;
+    height: 300px;
+
+    font-size: 20px;
+
+    background-color: black;
+    bottom: 0;
 }
 
 .second-div {
     position: static;
-    cursor: auto;
     top: 0;
+    right: 0;
     left: 0;
+
     display: block;
     width: 300px;
-    transform: none;
     height: 300px;
-    right: 0;
+
     font-size: 21px;
+
     background-color: green;
     bottom: 0;
+
+    cursor: auto;
+
+    transform: none;
 }
