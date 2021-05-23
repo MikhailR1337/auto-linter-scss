@@ -1,44 +1,32 @@
 .div-wrapper {
-    content: '';
-
-    display: flex;
     width: 100%;
-
     font-size: 30px;
-
     background-color: brown;
-
+    display: flex;
     justify-content: space-around;
 }
 
 .first-div {
-    top: 0;
     right: 0;
-    left: 0;
-
     display: block;
     width: 100px;
-    height: 300px;
-
-    font-size: 10px;
-
+    left: 0;
     background-color: black;
+    top: 0;
+    height: 300px;
+    font-size: 10px;
     bottom: 0;
 }
 
 .second-div {
     top: 0;
-    right: 0;
     left: 0;
-
     display: block;
     width: 300px;
+    transform: none;
     height: 300px;
-
+    right: 0;
     font-size: 21px;
-
     background-color: green;
     bottom: 0;
-
-    transform: none;
 }
