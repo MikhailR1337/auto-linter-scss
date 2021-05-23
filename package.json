@@ -1,33 +1,28 @@
 {
-  "name": "linter-order",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "prettier": "npx prettier --write *.scss",
-    "stylelint": "npx stylelint --fix *.scss"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
+    "name": "linter-order",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "prettier": "npx prettier --write *.scss",
+        "stylelint": "npx stylelint --fix *.scss"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "lint-staged": {
+        "*.scss": [
+        "npm run prettier",
+        "npm run stylelint"
+        ]
+    },
+    "devDependencies": {
+        "husky": "^6.0.0",
+        "lint-staged": "^11.0.0",
+        "prettier": "^2.3.0",
+        "stylelint": "^13.13.1",
+        "stylelint-config-prettier": "^8.0.2",
+        "stylelint-config-recommended": "^5.0.0",
+        "stylelint-order": "^4.1.0"
     }
-  },
-  "lint-staged": {
-    "*.scss": [
-      "npm run prettier",
-      "npm run stylelint"
-    ]
-  },
-  "devDependencies": {
-    "husky": "^6.0.0",
-    "lint-staged": "^11.0.0",
-    "prettier": "^2.3.0",
-    "stylelint": "^13.13.1",
-    "stylelint-config-prettier": "^8.0.2",
-    "stylelint-config-recommended": "^5.0.0",
-    "stylelint-order": "^4.1.0"
-  }
 }
