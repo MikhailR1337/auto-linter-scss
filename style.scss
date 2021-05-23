@@ -1,12 +1,10 @@
 .div-wrapper {
     display: flex;
     width: 100%;
-
     font-size: 30px;
-
     background-color: brown;
-
     justify-content: space-around;
+    content: "";
 }
 
 .first-div {
