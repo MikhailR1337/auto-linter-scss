@@ -17,8 +17,8 @@
     },
     "lint-staged": {
         "*.scss": [
-        "npm run prettier",
-        "npm run stylelint"
+            "npm run prettier",
+            "npm run stylelint"
         ]
     },
     "devDependencies": {
