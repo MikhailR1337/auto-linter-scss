@@ -1,18 +1,15 @@
 {
-    "extends": ["stylelint-config-recommended", "stylelint-config-prettier"],
     "plugins": ["stylelint-order"],
     "rules": {
         "indentation": 4,
         "rule-empty-line-before": "always",
-        "at-rule-empty-line-before": "always",
-        "property-disallowed-list": ["flex"],
-        "unit-disallowed-list": ["em", "rem"],
+        "at-rule-empty-line-before": ["always", {
+            "ignore": [
+                "first-nested"
+            ]
+        }],
         "order/order": [
             "declarations",
-            {
-                "type": "at-rule",
-                "name": "media"
-            },
             {
                 "type": "rule",
                 "selector": "^&::before"
@@ -32,13 +29,22 @@
             {
                 "type": "rule",
                 "selector": "^."
+            },
+            {
+                "type": "at-rule",
+                "name": "media"
+            },
+            {
+                "type": "at-rule",
+                "name": "include"
             }
         ],
         "order/properties-order": [
-            [
+            [ 
                 {
                     "emptyLineBefore": "always",
                     "properties": [
+                        "include",
                         "content",
                         "counter-increment",
                         "counter-reset"
@@ -78,12 +84,6 @@
                         "vertical-align",
                         "writing-mode",
                         "order",
-                        "width",
-                        "max-width",
-                        "min-width",
-                        "height",
-                        "max-height",
-                        "min-height",
                         "margin",
                         "margin-top",
                         "margin-right",
@@ -113,7 +113,17 @@
                         "grid-template-rows",
                         "gap",
                         "resize"
-
+                    ]
+                },
+                {
+                    "emptyLineBefore": "always",
+                    "properties": [
+                        "width",
+                        "max-width",
+                        "min-width",
+                        "height",
+                        "max-height",
+                        "min-height"
                     ]
                 },
                 {
